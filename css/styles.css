@@ -14,7 +14,7 @@
 
 /* Логотип */
 
-.logo {
+.logo-header {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -52,10 +52,8 @@
   color: var(--main-text-color);
 }
 
-.header-nav :hover {
-  color: var(--accent-color);
-}
-.header-nav :focus {
+.header-nav :hover,
+:focus {
   color: var(--accent-color);
 }
 
@@ -68,13 +66,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: var (var(--main-text-color));
+  color: var(--main-text-color);
 }
 
-.contacts-header :hover {
-  color: var(--accent-color);
-}
-.contacts-header :focus {
+.contacts-header :hover,
+:focus {
   color: var(--accent-color);
 }
 
@@ -86,11 +82,11 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
-.contacts-footer :hover {
-  color: var(--accent-color);
+.contacts-footer a {
+  color: rgba(255, 255, 255, 0.6);
 }
-.contacts-footer :focus {
+.contacts-footer :hover,
+:focus {
   color: var(--accent-color);
 }
 
@@ -191,6 +187,41 @@
 }
 
 /* Портфолио - Список навигации по работам студии */
+
+.button-studio-works:default {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--heading-text-color);
+  background-color: var(--background-color-light-grey);
+}
+.button-studio-works:hover,
+:focus {
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+/* Портфолио - Работы студии */
+
+.work-item h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--heading-text-color);
+}
+.work-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
 
 /* Общие свойства */
 body {
