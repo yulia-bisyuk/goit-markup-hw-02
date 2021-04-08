@@ -10,6 +10,8 @@
   --background-color-light-grey: #f5f4fa;
 
   --background-color-dark-gray: #020202;
+
+  --main-font: "Roboto", sans-serif;
 }
 
 /* Логотип */
@@ -61,6 +63,7 @@
   color: var(--accent-color);
 }
 .contacts-header {
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -76,6 +79,7 @@
 
 /* Футер */
 .contacts-footer {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -90,7 +94,8 @@
   color: var(--accent-color);
 }
 
-.address {
+.address-footer {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -123,6 +128,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 /* Студия - Преимущества */
@@ -197,11 +203,13 @@
 
   color: var(--heading-text-color);
   background-color: var(--background-color-light-grey);
+  cursor: pointer;
 }
 .button-studio-works:hover,
 :focus {
   color: #fff;
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* Портфолио - Работы студии */
@@ -225,17 +233,18 @@
 
 /* Общие свойства */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   background-color: var(--primary-white-color);
   color: var(--main-text-color);
 }
-a {
-  text-decoration: none;
-}
-footer {
+.footer {
   background-color: var(--background-color-dark-gray);
 }
-li {
+.link {
+  text-decoration: none;
+}
+
+.list-item {
   list-style-type: none;
 }
