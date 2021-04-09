@@ -47,16 +47,11 @@
 
   color: var(--heading-text-color);
 }
-.header-nav a {
+.header-nav .link {
   color: var(--heading-text-color);
 }
-.contacts-header a {
+.contacts-header .link {
   color: var(--main-text-color);
-}
-
-.header-nav :hover,
-:focus {
-  color: var(--accent-color);
 }
 
 .header-nav .current {
@@ -72,11 +67,6 @@
   color: var(--main-text-color);
 }
 
-.contacts-header :hover,
-:focus {
-  color: var(--accent-color);
-}
-
 /* Футер */
 .contacts-footer {
   font-style: normal;
@@ -86,12 +76,8 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.contacts-footer a {
+.contacts-footer .link {
   color: rgba(255, 255, 255, 0.6);
-}
-.contacts-footer :hover,
-:focus {
-  color: var(--accent-color);
 }
 
 .address-footer {
@@ -193,20 +179,21 @@
 }
 
 /* Портфолио - Список навигации по работам студии */
-
-.button-studio-works:default {
+.button-studio-works {
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-
+}
+.button-studio-works:default {
   color: var(--heading-text-color);
   background-color: var(--background-color-light-grey);
   cursor: pointer;
 }
 .button-studio-works:hover,
-:focus {
+.button-studio-works:focus {
   color: #fff;
   background-color: var(--accent-color);
   cursor: pointer;
@@ -243,6 +230,10 @@ body {
 }
 .link {
   text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
 
 .list-item {
